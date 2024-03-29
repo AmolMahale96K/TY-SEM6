@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+       $(document).ready(function(){
+        $('p').on({
+            dblclick : function(){
+                $(this).css('font-size','50px');
+            },
+            mouseenter : function(){
+                $(this).css('font-weight','bold');
+            },
+            mouseleave : function(){
+                $(this).css('font-style','italic');
+            },
+            mouseup : function(){
+                $(this).css('color','blue');
+                $(this).css('background-color','black');
+            },
+            mousedown : function(){
+                $(this).css('color','yellow');
+                $(this).css('background-color','red');
+            }
+        });
+       });   
+       
+    </script>
+</head>
+<body>
+    <p>We are learning jQuery</p>
+</body>
+</html>

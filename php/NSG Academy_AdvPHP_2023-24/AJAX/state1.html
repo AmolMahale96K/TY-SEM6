@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function fun()
+        {
+            st = form1.st.value;    //retrieve data of textfield
+            // st = form1.st.options[form1.st.selectedIndex].text;
+            
+            // create object of XMLHttpRequest
+            ob = new XMLHttpRequest();
+
+            // open backend file
+            ob.open("GET","state.php?st="+st,false);
+
+            // send()
+            ob.send();
+
+            // retrieve data and use
+            document.getElementById('city').innerHTML = ob.responseText;
+        }
+    </script>
+</head>
+<body>
+    <form name="form1">
+        Select Your state        
+        <select name="st" onchange="fun()">
+            <option value="maharashtra">maharashtra</option>
+            <option value="gujrat">gujrat</option>
+            <option value="rajasthan">rajasthan</option>
+            <option value="goa">goa</option>
+        </select> <br>
+        Select Your City 
+        <select id="city">
+
+        </select>
+    </form>
+</body>
+</html>

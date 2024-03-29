@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function initial()
+        {
+            ans = confirm("Do you want to continue?");
+            if(ans==false)
+                location = "thankyou.html";
+            else
+                alert("Welcome!!!!");
+        }
+        function input()
+        {
+            no1 = parseInt(prompt("Enter first number"));
+            no2 = parseInt(prompt("Enter second number"));
+
+            total = no1+no2;
+            // console.log("Addition : "+total);
+            // alert("Addition : "+total);
+            // document.write("Addition : "+total);
+            document.getElementById('result').innerHTML = "Addition : "+total;
+        }
+    </script>
+</head>
+<body onload="initial()">
+    <input type="button" value="click" onclick="input()"> <span id="result"></span>
+</body>
+</html>

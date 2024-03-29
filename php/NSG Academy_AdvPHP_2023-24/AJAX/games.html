@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    function fun()
+    {
+        // step-1 create object
+        if(window.XMLHttpRequest) //IE7+, Firefox, Chrome, Opera, Safari
+            ob = new XMLHttpRequest();
+        else    
+            ob = new ActiveXObject(Microsoft.XMLHTTP);   //IE5,IE6
+
+        // step-2 open()
+        ob.open("GET","games.php",false);
+
+        // step-3 send()
+        ob.send();
+
+        // step-4 responseText
+        document.getElementById('g').innerHTML = ob.responseText;
+    }
+   </script>
+</head>
+<body>
+    <form>
+        <select id="g">
+
+        </select>
+        <input type="button" value="fetch" onmouseover="fun()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+       $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('.paragroup1').toggle();
+            });
+
+            $('#btn2').dblclick(function(){
+                $('.paragroup2').css('color','red');
+            });
+       });
+    </script>
+</head>
+<body>
+    <p class="paragroup1">Paragraph 1</p>
+    <p class="paragroup1">Paragraph 2</p>
+    <p class="paragroup1">Paragraph 3</p>
+    <p class="paragroup2">Paragraph 4</p>
+    <p class="paragroup2">Paragraph 5</p>
+    <button id="btn1">Click Me</button>
+    <button id="btn2">Double Click Me</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- offline use of jQuery -->
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <!-- online use of jQuery with the help of Google CDN -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+
+    <!-- online use of jQuery with the help of jQuery CDN -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+
+    <script>
+        $(document).ready(function(){            
+            $('#mypara1').click(function(){
+                $(this).hide();
+            });
+
+            $('#mypara2').dblclick(function(){
+                alert('You have double clicked on para2');
+            });
+        });
+    </script>
+</head>
+<body>    
+    <p id="mypara1">If you click on me, I will disappear</p>
+    <p id="mypara2">If you double click on me, I will give you a warning</p>
+</body>
+</html>

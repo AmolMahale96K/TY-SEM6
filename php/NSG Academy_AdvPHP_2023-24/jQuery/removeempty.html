@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            width : 200px;
+            height : 200px;
+            background-color: yellow;
+            border : 1px solid black;
+            margin : 20px;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('div').remove();
+            });
+            $('#btn2').click(function(){
+                $('div').empty();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">Remove</button>
+    <button id="btn2">Empty</button> <br>
+        
+    <div>
+        <p>NSG Academy</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic dicta possimus. Officiis, 
+        <p>Bye</p>
+    </div>
+</body>
+</html>

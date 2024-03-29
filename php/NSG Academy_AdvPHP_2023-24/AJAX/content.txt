@@ -1,0 +1,3 @@
+AJAX means Asynchronous JavaScript And XML
+AJAX makes program execution speed FAST
+AJAX adds dynamic content to web page without reloading the page

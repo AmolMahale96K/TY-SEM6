@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function fun()
+        {
+            m = form1.mks.value;
+
+            if(window.XMLHttpRequest)
+                ob = new XMLHttpRequest(); //IE7, all advanced browser
+            else
+                ob = new ActiveXObject(Microsoft.XMLHTTP);       //IE5 and IE6
+
+            ob.open("POST","student.php",true);         // true : asynchronous       
+            ob.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+
+            ob.send("abcd="+m);
+            
+            ob.onreadystatechange=function(){
+                if(ob.readyState==4 && ob.status==200){
+                    document.getElementById('result').innerHTML = ob.responseText;
+                }
+            };
+
+        }
+    </script>    
+</head>
+<body>
+    <form name="form1">
+        Enter marks <input type="text" name="mks"> <br>
+        <input type="button" value="fetchdata" onmouseover="fun()">
+        <div id="result">
+
+        </div>
+    </form>
+</body>
+</html>

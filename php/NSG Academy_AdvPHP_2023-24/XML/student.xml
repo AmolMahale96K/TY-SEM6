@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<college>
+    <student>
+        <roll>111</roll>
+        <name>aaa</name>
+        <mks1>90</mks1>
+        <mks2>80</mks2>
+        <mks3>70</mks3>
+    </student>
+
+     <student>
+        <roll>222</roll>
+        <name>bbb</name>
+        <mks1>75</mks1>
+        <mks2>95</mks2>
+        <mks3>68</mks3>
+    </student>
+
+     <student>
+        <roll>333</roll>
+        <name>ccc</name>
+        <mks1>42</mks1>
+        <mks2>52</mks2>
+        <mks3>69</mks3>
+    </student>
+
+     <student>
+        <roll>444</roll>
+        <name>ddd</name>
+        <mks1>78</mks1>
+        <mks2>89</mks2>
+        <mks3>96</mks3>
+    </student>
+</college>

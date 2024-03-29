@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <form name="form1">
+        Enter first number <input type="text" name="first"> <br> 
+        Enter second number <input type="text" id="second"> <br> 
+        Enter third number <input type="text" id="third"> <br> 
+
+        <input type="button" value="Maximum" onclick="fun()">
+
+        <div id="result"></div>
+    </form>
+
+    <script>
+        function fun()
+        {
+            no1 = parseInt(form1.first.value);
+            // no1 = parseInt(document.getElementById('first').value);   // "5" --> 5
+            no2 = parseInt(document.getElementById('second').value);
+            no3 = parseInt(document.getElementById('third').value);
+
+            if(no1>no2){
+                if(no1>no3)
+                    document.getElementById('result').innerHTML = "Maximum number : "+no1;
+                else
+                    document.getElementById('result').innerHTML = "Maximum number : "+no3;
+            }else{
+                if(no2>no3)
+                    document.getElementById('result').innerHTML = "Maximum number : "+no2;
+                else
+                    document.getElementById('result').innerHTML = "Maximum number : "+no3;
+            }
+        }
+    </script>
+</body>
+</html>

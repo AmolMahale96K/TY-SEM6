@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                // html()
+                // text()
+                // val()
+                msg = $('#msg').html();           //get text/html from html component
+                alert(msg);
+                a = parseInt($('#no1').val());    //get value from form field
+                b = parseInt($('#no2').val());    //get value from form field
+                c = a-b;
+                $('#result').html('Difference : '+c);   //set text/html to html component
+                $('#no3').val('Difference: '+c);    //set value to form field
+            });
+        });
+        function fun(){
+            // innerHTML
+            // innerText
+            // value
+            msg = document.getElementById('msg').innerHTML;     //get text/HTML from html component
+            alert(msg);
+            a = parseInt(document.getElementById('no1').value); //get value from form field
+            b = parseInt(document.getElementById('no2').value);
+            c = a+b;
+            document.getElementById('result').innerHTML = "Total : "+c; //set text/HTML to html component
+            document.getElementById('no3').value = 'Total : '+c;    //set value to form field
+        }
+    </script>
+</head>
+<body>
+    <p id="msg"><b>Arithmetic Manipulation</b> of <i>two numbers</i><p>
+    Enter first number <input type="text" id="no1"> <br>
+    Enter second number <input type="text" id="no2"> <br>
+    Result <input type="text" id="no3" disabled> <br>
+    <div id="result"></div>
+    <input type="button" value="ADD" onclick="fun()">
+    <button id="btn1">SUB</button>
+</body>
+</html>

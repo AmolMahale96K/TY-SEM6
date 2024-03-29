@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <script>
+        function fun()
+        {
+            file = form1.fname.value;
+
+            // create object of XMLHttpRequest
+            ob = new XMLHttpRequest();
+
+            // call open()
+            ob.open("GET","abcd.php?fname="+file,false);    //false : sync, true : async
+
+            // call send()
+            ob.send();
+
+            // retrieve result and print result
+            document.getElementById('result').innerHTML = ob.responseText;
+        }
+    </script>
+</head>
+<body>
+    <form name="form1">
+        Enter file name <input type="text" name="fname"> <br>
+        <input type="button" value="fetch" onmouseover="fun()">
+        <div id="result"></div>
+    </form>
+</body>
+</html>

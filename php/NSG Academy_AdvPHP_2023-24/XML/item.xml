@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<store>
+    <item>
+        <name>pen</name>
+        <qty>10</qty>
+        <price>50</price>
+    </item>
+
+    <item>
+        <name>pencil</name>
+        <qty>50</qty>
+        <price>5</price>
+    </item>
+    
+    <item>
+        <name>notebook</name>
+        <qty>20</qty>
+        <price>100</price>
+    </item>
+    
+</store>

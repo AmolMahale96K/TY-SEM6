@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+       $(document).ready(function(){
+        $('input').focus(function(){
+            $(this).css('background-color','yellow');
+        });
+
+        $('input').blur(function(){
+            $(this).css('background-color','green');
+        });
+        
+       });
+    </script>
+</head>
+<body>
+    Enter your rollnumber <input type="text"> <br>
+    Enter your name <input type="text"> <br>
+</body>
+</html>

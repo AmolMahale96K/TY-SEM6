@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<bookstore>
+    <php>
+        <name>Complete Reference in PHP</name>
+        <price>1000</price>
+    </php>
+    <php>
+        <name>PHP by Orelly</name>
+        <price>500</price>
+    </php>
+</bookstore>

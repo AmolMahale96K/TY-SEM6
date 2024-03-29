@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Enter a number <input type="text" id="no"> <br>
+
+        <input type="button" value="Print" onclick="fun()">
+
+        <div id="result"></div>
+    </form>
+    <script>
+        function fun(){
+            no = parseInt(document.getElementById('no').value);
+
+            for(i=1;i<=no;i++){
+                for(j=1;j<=i;j++){
+                    document.getElementById('result').innerHTML += "* ";
+                }
+                document.getElementById('result').innerHTML += "<br>";
+            }
+        }
+    </script>
+</body>
+</html>
