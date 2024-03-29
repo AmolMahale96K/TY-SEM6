@@ -1,0 +1,35 @@
+100			READ	A            		090114
+101			READ	B					090115
+102	LOOP	MOVER	AREG,	B       	041115 
+103			COMP	AREG	ZERO		061117
+104			BC		EQ,		EXIT		073112	
+105			MOVER	AREG,	ANS			041116
+106			MULT	AREG,	A	    	031114  
+107			MOVEM	AREG,	ANS			051116
+108			MOVER	AREG,	B			041115
+109			SUB		AREG,	ONE			021118
+110			MOVEM	AREG,	B			051115
+111			BC 		ANY,	LOOP		076102	
+112	EXIT	PRINT 	ANS					100116
+113			STOP						000000
+114			A 		DS 		1			1	
+115			B 		DS 		0       	0           
+116			ANS 	DS 		1       	1         
+117			ZERO 	DC 		0       	0        
+118			ONE 	DC 		1       	1         
+
+/*
+	According to labbook
+	OPCODE	MNEMONIC			NO	REGISTER		CONDITIONAL CODE	MNEMONIC
+	00		STOP				1	AREG						1		LT		
+	01		ADD					2	BREG						2		LE
+	02		SUB					3	CREG						3		EQ
+	03		MULT				4	DREG						4		GT
+	04		MOVER												5		GE
+	05		MOVEM												6		ANY
+	06		COMP
+	07		BC
+	08		DIV
+	09		READ
+	10		PRINT
+*/
