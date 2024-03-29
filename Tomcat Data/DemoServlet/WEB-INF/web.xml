@@ -1,0 +1,11 @@
+<web-app>
+	<servlet>
+		<servlet-name>abcd</servlet-name>
+		<servlet-class>FirstServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>abcd</servlet-name>
+		<url-pattern>/secret</url-pattern>
+	</servlet-mapping>
+</web-app>

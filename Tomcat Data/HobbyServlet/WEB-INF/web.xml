@@ -1,0 +1,10 @@
+<web-app>	
+	<servlet>
+		<servlet-name>hobby</servlet-name>
+		<servlet-class>HobbyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hobby</servlet-name>
+		<url-pattern>/hobby</url-pattern>
+	</servlet-mapping>	
+</web-app>
